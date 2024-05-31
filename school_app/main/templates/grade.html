@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Grade Page
+{% endblock title %}
+
+{% block extrahead %}
+    <link rel="stylesheet" href="{% static 'css/grade.css' %}">
+{% endblock extrahead %}
+
+{% block content %}
+    This is the grade page!
+{% endblock content %}
+
+{% block extra_js %}
+    <script src = "{% static 'js/grade.js' %}"></script>
+{% endblock extra_js %}
