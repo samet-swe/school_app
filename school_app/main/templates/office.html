@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-    Home Page
+    Office Page
 {% endblock title %}
 
 {% block extrahead %}
@@ -10,9 +10,12 @@
 {% endblock extrahead %}
 
 {% block content %}
-    This is the home page!
+    This is the office page!
+    <div class = "name">Name: {{ office.name }} </div>
+    <div class = "name">Room: {{ office.room }} </div>
+
 {% endblock content %}
 
 {% block extra_js %}
-    <script src = "{% static 'js/home.js' %}"></script>
+    <script src = "{% static 'js/office.js' %}"></script>
 {% endblock extra_js %}

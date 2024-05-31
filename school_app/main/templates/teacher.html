@@ -11,8 +11,46 @@
 
 {% block content %}
     This is the teacher page!
+    <div class = "teacher-info">
+        <div class = "display-name">Name: {{ teacher.name }} </div>
+        <div class = "display-room">Room: {{ teacher.room }} </div>
+    </div>
+    
+    <div class = "messages">
+        <h1 id="general" style="margin-left:20px;">General Announcements</h1>
+        <hr /> <br />
+    
+        <div class="message_window">
+            <div id="gen_msg"></div>
+        </div>
+    </div>
+    
+    <div class = "messages">
+        <h1 id="classroom" style="margin-left:20px;">Classroom Announcements</h1>
+        <hr /> <br />
+    
+        <div class="message_window">
+            <div id="rm_msg"></div>
+        </div>
+    </div>
+
+    <div class = "messages">
+        <h1 id="personal" style="margin-left:20px;">Personal Messages</h1>
+        <hr/> <br/>
+
+        <div class="message_window">
+            <div id="pers_msg"></div>
+        </div>
+    </div>
+
+    <div class="enter_message">
+        <input type="text" id="message" class="enter_text" name="message" />
+        <input type="submit" class="submit_button" name="send" value="Send message" onclick="sendMessage()" />
+    </div>
+    
 {% endblock content %}
 
 {% block extra_js %}
+
     <script src = "{% static 'js/teacher.js' %}"></script>
 {% endblock extra_js %}

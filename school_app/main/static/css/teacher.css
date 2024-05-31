@@ -1,0 +1,24 @@
+.teacher-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.display-name {
+    justify-content:left;
+}
+
+.display-room {
+    justify-content:right;
+}
+
+.messages {
+    justify-content:left;
+}
+
+.message_window {
+    justify-content:left;
+}
+
+.enter_message {
+    justify-content:left;
+}
