@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Assignment Page
+{% endblock title %}
+
+{% block extrahead %}
+    <link rel="stylesheet" href="{% static 'css/assignment.css' %}">
+{% endblock extrahead %}
+
+{% block content %}
+    This is the assignment page!
+{% endblock content %}
+
+{% block extra_js %}
+    <script src = "{% static 'js/assignment.js' %}"></script>
+{% endblock extra_js %}
